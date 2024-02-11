@@ -1,0 +1,23 @@
+{
+  "name": "status-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skogis-ab/status-checker.git"
+  },
+  "author": "Filip S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skogis-ab/status-checker/issues"
+  },
+  "homepage": "https://github.com/skogis-ab/status-checker#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2"
+  }
+}
