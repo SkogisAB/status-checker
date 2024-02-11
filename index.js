@@ -11,7 +11,7 @@ client.login(config.token);
 
 const app = express();
 
-app.get('/ya&dsa&saJS/status', async (req, res) => {
+app.get('/status', async (req, res) => {
     try {
         const guild = client.guilds.cache.get(config.guildId);
         const member = await guild.members.fetch(config.userId);
