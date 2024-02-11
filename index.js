@@ -1,5 +1,6 @@
 const express = require('express');
 const config = require('./config.json');
+const cors = require('cors');
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences] });
 
@@ -10,8 +11,9 @@ client.on('ready', () => {
 client.login(config.token);
 
 const app = express();
+app.use(cors());
 
-app.get('/status', async (req, res) => {
+app.get('/api/status', async (req, res) => {
     try {
         const guild = client.guilds.cache.get(config.guildId);
         const member = await guild.members.fetch(config.userId);
