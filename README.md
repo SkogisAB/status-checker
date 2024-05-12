@@ -19,7 +19,7 @@ docker-compose.yml:
 version: '3.8'
 services:
   app:
-    image: skogisab/status-checker:latest
+    image: ghcr.io/skogisab/status-checker:latest
     ports:
       - "PORT:PORT" # CHANGE PORT TO YOUR ACTUAL PORT
     environment:
